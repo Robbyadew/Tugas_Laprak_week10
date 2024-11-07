@@ -1,0 +1,12 @@
+# Write your code below and press Shift+Enter to execute
+
+rob = int(input('Masukkan angka:'))
+
+def faktorial(n):
+    if n == 1 or n == 0:
+        return 1
+    else:
+        return n * faktorial(n-1)
+
+
+print(f"nilai dari {rob} faktorial adalah:", faktorial(rob))
