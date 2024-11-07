@@ -1,0 +1,35 @@
+# Write your code below and press Shift+Enter to execute
+
+from math import pi
+
+while True:
+  print("Menu:")
+  print("1. Luas Lingkaran")
+  print("2. Luas Persegi")
+  print("3. Luas Segitiga")
+  print("4. Keluar")
+
+  pilihan = input("pilih menu (1-4): ")
+
+  if pilihan == '1' :
+    r = float(input("Masukkan jari-jari: "))
+    luas = pi * r * r
+    print(f"Luas Lingkaran = {luas: .2f}")
+
+  elif pilihan == '2' :
+    s = float(input("Masukkan sisi: "))
+    luas = s * s
+    print(f"Luas Persegi = {luas}")
+
+  elif pilihan == '3' :
+    a = float(input("Masukkan alas: "))
+    t = float(input("Masukkan tinggi: "))
+    luas = 0.5 * a * t
+    print(f"Luas Segitiga = {luas}")
+
+  elif pilihan == '4' :
+    print("Program selesai")
+    break
+
+  else :
+    print("Pilihan tidak valid")
